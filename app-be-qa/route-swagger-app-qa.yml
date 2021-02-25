@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/instance: app-be-qa
 spec:
   host: >-
-    app-qa-dev.mak-prod-europe-b3c-8x32-83a47da58f874381c353492b1ca1c269-0000.eu-de.containers.appdomain.cloud
+    app-be-qa.mak-prod-europe-b3c-8x32-83a47da58f874381c353492b1ca1c269-0000.eu-de.containers.appdomain.cloud
   path: '/webjars/swagger-ui/3.28.0/index.html?url=/sap-fuse-workshop/api-doc#'
   to:
     kind: Service
