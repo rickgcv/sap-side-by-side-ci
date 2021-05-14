@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-be-cicd
-  namespace: argocd
+  namespace: openshift-gitops
 spec:
   destination:
     namespace: app-be-cicd
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: app-be-cicd
-    repoURL: https://github.com/makentenza/sap-side-by-side-ci.git
+    repoURL: https://github.com/rickgcv/sap-side-by-side-ci.git
     targetRevision: HEAD
   syncPolicy:
     automated: {}

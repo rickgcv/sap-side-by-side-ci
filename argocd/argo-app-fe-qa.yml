@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-fe-qa
-  namespace: argocd
+  namespace: openshift-gitops
 spec:
   destination:
     namespace: app-fe-qa
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: app-fe-qa
-    repoURL: https://github.com/makentenza/sap-side-by-side-ci.git
+    repoURL: https://github.com/rickgcv/sap-side-by-side-ci.git
     targetRevision: HEAD
   syncPolicy:
     automated: {}
