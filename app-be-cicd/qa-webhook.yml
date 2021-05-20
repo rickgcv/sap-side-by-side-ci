@@ -12,7 +12,7 @@ spec:
         - cel:
             filter: (body.ref.startsWith('refs/heads/qa'))
       template:
-        name: be-pipeline-template-qa
+        ref: be-pipeline-template-qa
 
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
