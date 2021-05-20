@@ -12,7 +12,7 @@ spec:
         - cel:
             filter: (body.ref.startsWith('refs/heads/dev'))
       template:
-        name: fe-pipeline-template-dev
+        ref: fe-pipeline-template-dev
 
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
